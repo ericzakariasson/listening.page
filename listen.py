@@ -39,7 +39,7 @@ if (site_url):
 
   text = chat_completion.choices[0].message.content
 
-  site_urk_hash = hashlib.md5(site_url)
+  site_urk_hash = hashlib.md5(site_url.encode())
 
   i = 0
   print(text)
